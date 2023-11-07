@@ -1,33 +1,58 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+/* Estiliza o corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 700; /* Fonte mais ousada */
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
 }
 
-.board{
+/* Estiliza o contêiner do tabuleiro */
+.board {
     display: grid;
-    grid-template-columns:repeat(3,100px);
+    grid-template-columns: repeat(3, 100px);
     gap: 10px;
     margin: 30px auto;
     width: 320px;
+    margin-bottom: 20px;
 }
 
-.cell{
+/* Estiliza as células do tabuleiro */
+.cell {
     width: 100px;
     height: 100px;
-    font-size: 24px;
+    font-size: 48px; /* Aumenta o tamanho da fonte */
+    font-weight: 700; /* Fonte mais ousada */
     text-align: center;
     line-height: 100px;
-    background-color: gray;
+    background-color: #333; /* Fundo escuro */
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid #fff; /* Borda branca */
 }
 
-.cell:hover{
-    background-color: blue;
+/* Estiliza as células quando o cursor passa por cima delas */
+.cell:hover {
+    background-color: #444; /* Fundo mais escuro */
 }
 
-.message{
-    font-size: 40px;
-    margin: 30px;
+/* Estiliza a mensagem */
+.message {
+    font-size: 28px;
+    margin-top: 20px;
+    background-color: #000; /* Fundo preto */
+    border: 1px solid #fff; /* Borda branca */
+    font-family: 'Roboto', sans-serif;
+    color: #fff; /* Texto branco */
+    padding: 10px;
 }
+
+/* Estiliza as linhas do tabuleiro */
+.board .row:nth-child(odd) {
+    background-color: #444; /* Fundo mais escuro */
+}
+
+.board .column:nth-child(odd) {
+    background-color: #444; /* Fundo mais escuro */
+}
+
